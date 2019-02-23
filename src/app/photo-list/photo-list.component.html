@@ -1,0 +1,10 @@
+<div class="elemPosition">
+  <p>Welcome back!</p>
+  <ul>
+    <li *ngFor="let photo of photos">
+      <a (click)="showPhoto(photo)" routerLink="/">{{ photo.title }}</a>
+    </li>
+  </ul>
+  <button class="btn btn-primary" [disabled]="page === 1" (click)="prevPage()">Previous</button>
+  <button class="btn btn-primary" (click)="nextPage()">Next</button>
+</div>

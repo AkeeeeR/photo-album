@@ -1,0 +1,37 @@
+.elemPosition {
+  text-align: center;
+  p {
+    font-size: 20px;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+  }
+  ul {
+    text-align: left;
+    height: 400px;
+    padding: 30px 0;
+    width: 100%;
+    li {
+      list-style-type: circle;
+    }
+    a {
+      color: #0c3b64;
+      &:focus, &:hover {
+        text-decoration: none;
+        color: #337ab7;
+      }
+    }
+  }
+  button {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  ul {
+    width: 80% !important;
+    height: 500px !important;
+    margin: auto !important;
+  }
+}

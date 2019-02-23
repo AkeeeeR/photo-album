@@ -1,0 +1,17 @@
+.elemPosition {
+  text-align: center;
+  padding-top: 125px;
+  img {
+    border-radius: 60pt;
+    cursor: pointer;
+    &:hover {
+      border-radius: 0pt;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .elemPosition {
+    padding-top: 85px;
+  }
+}
